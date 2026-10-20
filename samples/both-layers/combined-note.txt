@@ -1,0 +1,8 @@
+SYNTHETIC TEST FIXTURE - NOT REAL BUSINESS DATA
+
+AIRLIFT-DEMO-CONFIDENTIAL-654321
+Password=DemoOnlyNotARealSecret123;
+
+The first value matches the custom Purview marker.
+The second value matches the APIM connection-string pattern.
+With both layers in block mode, Purview/GSA blocks before APIM.

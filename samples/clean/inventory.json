@@ -1,0 +1,10 @@
+{
+  "classification": "PUBLIC SYNTHETIC DEMO DATA",
+  "project": "Airlift Inventory",
+  "currency": "USD",
+  "items": [
+    {"sku": "DEMO-WIDGET-001", "name": "Blue demo widget", "quantity": 12, "unitPrice": 3.5},
+    {"sku": "DEMO-WIDGET-002", "name": "Green demo widget", "quantity": 0, "unitPrice": 4.25},
+    {"sku": "DEMO-WIDGET-003", "name": "Orange demo widget", "quantity": 7, "unitPrice": 2.0}
+  ]
+}

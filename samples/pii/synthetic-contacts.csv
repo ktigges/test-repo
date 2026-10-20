@@ -1,0 +1,4 @@
+record_id,display_name,email,phone,notes
+DEMO-001,Synthetic Person One,person.one@example.invalid,+1-202-555-0101,Invented contact; not an actual person
+DEMO-002,Synthetic Person Two,person.two@example.invalid,+1-202-555-0102,Invented contact; not an actual person
+DEMO-003,Synthetic Person Three,person.three@example.invalid,+1-202-555-0103,Invented contact; not an actual person

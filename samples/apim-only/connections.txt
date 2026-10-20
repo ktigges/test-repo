@@ -1,0 +1,7 @@
+SYNTHETIC TEST FIXTURES - NOT USABLE CONNECTION STRINGS
+
+Server=database.example.invalid;Database=demo;User Id=demo;Password=DemoOnlyNotARealSecret123;
+AccountName=demoonly;AccountKey=DEMOONLY000000000000;
+Endpoint=sb://demo.example.invalid/;SharedAccessKeyName=Demo;SharedAccessKey=DEMOONLY000000000000;
+
+Each line is an independent demo pattern sample.

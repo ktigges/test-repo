@@ -1,0 +1,9 @@
+{
+  "classification": "PUBLIC SYNTHETIC DEMO DATA",
+  "service": "demo-inventory",
+  "environment": "demo",
+  "endpoint": "https://inventory.example.invalid",
+  "logging": {"level": "information", "capturePayloads": false},
+  "features": {"readOnly": true, "inventorySearch": true},
+  "credentials": "Supplied at runtime by the gateway; never stored in this repository."
+}

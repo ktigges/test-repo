@@ -1,0 +1,10 @@
+{
+  "name": "airlift-synthetic-demo-repo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Synthetic fixtures for authorized AI gateway and MCP governance demonstrations.",
+  "type": "module",
+  "engines": {"node": ">=20"},
+  "scripts": {"test": "node --test"},
+  "dependencies": {}
+}

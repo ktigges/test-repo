@@ -1,0 +1,9 @@
+SYNTHETIC PAYMENT TEST DATA - NOT A REAL CUSTOMER ACCOUNT
+
+Cardholder: SYNTHETIC DEMO PERSON
+Credit card number: 4111 1111 1111 1111
+
+This is a public test card number, not a real payment credential.
+The APIM demo explicitly matches it.
+The custom Purview marker SIT does not match it.
+A separately configured built-in credit-card SIT may also match it.

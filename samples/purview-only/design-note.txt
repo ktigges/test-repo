@@ -1,0 +1,11 @@
+SYNTHETIC DEMO DATA - NOT A REAL ORGANIZATION DOCUMENT
+
+Project: Airlift Inventory
+Classification marker: AIRLIFT-DEMO-CONFIDENTIAL-123456
+
+This imaginary design proposes a read-only inventory dashboard.
+The project has no real customers, financial results, or proprietary code.
+
+The marker is intended to match the custom AI-Demo-Synthetic-Secret SIT.
+It is plain text, not a Microsoft Purview sensitivity label.
+The APIM demo regex is expected to pass this content.

@@ -1,0 +1,89 @@
+{
+  "classification": "SYNTHETIC TEST DATA - NOT REAL CREDENTIALS OR PERSONAL DATA",
+  "cases": [
+    {
+      "id": "clean",
+      "text": "Hello from the synthetic inventory demo.",
+      "expectedApim": "pass",
+      "expectedPurviewMarker": false,
+      "notes": "Clean control sample."
+    },
+    {
+      "id": "purview-only",
+      "text": "AIRLIFT-DEMO-CONFIDENTIAL-123456",
+      "expectedApim": "pass",
+      "expectedPurviewMarker": true,
+      "notes": "Custom demo SIT marker, not a real secret."
+    },
+    {
+      "id": "anthropic-key",
+      "text": "sk-ant-DEMO000000000000",
+      "expectedApim": "sensitive:api-key",
+      "expectedPurviewMarker": false,
+      "notes": "Nonfunctional synthetic Anthropic-shaped key, not an OpenAI key."
+    },
+    {
+      "id": "github-fine-grained",
+      "text": "github_pat_DEMO000000000000",
+      "expectedApim": "sensitive:api-key",
+      "expectedPurviewMarker": false,
+      "notes": "Nonfunctional synthetic GitHub PAT-shaped value."
+    },
+    {
+      "id": "github-classic",
+      "text": "ghp_00000000000000000000",
+      "expectedApim": "sensitive:api-key",
+      "expectedPurviewMarker": false,
+      "notes": "Nonfunctional shortened GitHub token-shaped value."
+    },
+    {
+      "id": "password-assignment",
+      "text": "Password=DemoOnlyNotARealSecret123;",
+      "expectedApim": "sensitive:connection-string",
+      "expectedPurviewMarker": false,
+      "notes": "Synthetic password assignment; not a login credential."
+    },
+    {
+      "id": "storage-key",
+      "text": "AccountKey=DEMOONLY000000000000;",
+      "expectedApim": "sensitive:connection-string",
+      "expectedPurviewMarker": false,
+      "notes": "Nonfunctional synthetic storage-key assignment."
+    },
+    {
+      "id": "shared-access-key",
+      "text": "SharedAccessKey=DEMOONLY000000000000;",
+      "expectedApim": "sensitive:connection-string",
+      "expectedPurviewMarker": false,
+      "notes": "Nonfunctional synthetic shared-key assignment."
+    },
+    {
+      "id": "test-card",
+      "text": "4111 1111 1111 1111",
+      "expectedApim": "sensitive:test-card",
+      "expectedPurviewMarker": false,
+      "notes": "Public payment-test number, not a real customer's card. Other Purview rules may also detect it."
+    },
+    {
+      "id": "synthetic-email",
+      "text": "sample-user@example.invalid",
+      "expectedApim": "pass",
+      "expectedPurviewMarker": false,
+      "notes": "Reserved invalid domain. Email is outside these two demo detectors; other DLP policies may differ."
+    },
+    {
+      "id": "short-key-negative",
+      "text": "sk-ant-short",
+      "expectedApim": "pass",
+      "expectedPurviewMarker": false,
+      "notes": "Negative control below the illustrative APIM length threshold."
+    },
+    {
+      "id": "both-layers",
+      "text": "AIRLIFT-DEMO-CONFIDENTIAL-654321 and Password=DemoOnlyNotARealSecret123;",
+      "expectedApim": "sensitive:connection-string",
+      "expectedPurviewMarker": true,
+      "notes": "With Purview blocking enabled, GSA blocks first; APIM does not receive the request."
+    }
+  ]
+}

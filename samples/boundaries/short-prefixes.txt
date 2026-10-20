@@ -1,0 +1,10 @@
+SYNTHETIC NEGATIVE CONTROLS
+
+sk-ant-short
+github_pat_short
+ghp_short
+Password=tiny;
+AIRLIFT-DEMO-PUBLIC-123456
+
+These do not meet the supplied APIM pattern thresholds or custom Purview marker.
+Passing this test does not establish that the content is safe under every policy.
