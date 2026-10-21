@@ -1,0 +1,1 @@
+Repository write through rogue MCP with MCP enforcement disabled.
